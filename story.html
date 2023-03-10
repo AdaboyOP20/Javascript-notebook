@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizzare Story</title>
+</head>
+<body>
+    <h1>The Inter Galactic Tales</h1>
+    <br>
+    <p>Name:</p>
+    <input type="text" id="name2">
+    <br>
+    <p>Alternate Name:</p>
+    <input type="text" id="altname">
+    <br>
+    <p>Planet:</p>
+    <input type="text" id="planet">
+    <br>
+    <p>Verb:</p>
+    <input type="text" id="verb">
+    <br>
+    <p>Animal:</p>
+    <input type="text" id="animal">
+    <br>
+    <p>Adjective:</p>
+    <input type="text" id="adj">
+    <br>
+    <p>Place:</p>
+    <input type="text" id="place">
+    <br>
+    <button onclick="storyWrite()">Generate Story</button>
+    <h4 id="story"></h4>
+    
+    <script>
+        function storyWrite()
+        {
+            story.textContent = "One day "+ name2.value +" and "+ altname.value +" decided to travel to "
+            + planet.value +". The "+ animal.value +" was "+ verb.value +" behind them. They "+ adj.value + 
+            " defeated "+ animal.value +" and came back to "+ place.value;
+        }
+    </script>
+</body>
+</html>

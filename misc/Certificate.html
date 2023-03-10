@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate maker</title>
+</head>
+<body>
+    <form id="form1">
+    <h1>Certificate Maker</h1>
+    <p>Name:</p>
+    <input type="text" id="stdname">
+    <br><br>
+    <p>Grade:</p>
+    <input type="range" id="grade" min="1" max="12" value="1">
+    <br><br>
+    <p>Language:</p>
+    <select id="language">
+        <option value="Python">Python</option>
+        <option value="Scratch">Scratch</option>
+        <option value="Java">Java</option>
+        <option value="Mit App inventer">Mit App inventer</option>
+        <option value="Web Design">Web Design</option>
+        <option value="Javascript">Javascript</option>
+    </select>
+    <br><br>
+    </form>
+    <p id="certificate"></p>
+    <script>
+        function certificatewrite()
+        {
+            certificate.textContent = "Master "+ stdname.value + " has completed the "+ language.value +" while being in grade "+ grade.value +". The has shown his extraordinary determination and has outperformed his class and has impressed his teachers and has performed to his full potential" 
+        }
+        form1.onchange = certificatewrite;
+    </script>
+</body>
+</html>

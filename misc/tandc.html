@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Terms and Conditions</h1>
+    <br><br>
+    <p>by agreeing to this, your bank balance will be emptied in 3.01 miliseconds</p>
+    <input type="checkbox" id="terms">I love your terms conditions, ofcourse i will accept it
+    <br><br>
+    <button id="signup">prepare to die</button>
+    <script>
+        function kill()
+        {
+            if (terms.checked == true)
+            {
+                signup.disabled = false;
+            }
+            else
+            {
+                signup.disabled = true;
+            }
+        }
+        window.onload = kill;
+        terms.onchange = kill;
+    </script>
+    </body>
+</html>
